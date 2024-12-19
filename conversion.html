@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouVector | Raster-to-vector conversion</title>
+        <link media="all" rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+        <link media="all" rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="logo logo-inner">
+            <a href="index.html"><img src="images/logo.png" alt="YouVector"></a>
+        </div>
+        <div class="inner-intro">
+            <div class="container">
+                <h2>Raster-to-vector conversion</h2>
+                <p>Convert your raster image into a vector illustration</p>
+            </div>
+        </div>
+        <div class="convert inner">
+            <div class="container">
+                <div class="convert-form">
+                    <div class="step first">
+                        <input type="file" name="attachment" accept="image/*" required>
+                        <label>Supported files: .jpg, .png, .gif</label>
+                    </div>
+                    <button type="button" class="button Continue">Continue</button>
+                    <div class="step">
+                        <input type="email" placeholder="Your email" required>
+                        <p class="policy">You'll be sent your illustration to this email, we will never collect your data.</p>
+                    </div>
+                    <button type="button" class="button Continue">Continue</button>
+                    <div class="step">
+                        <p>Indicate how much detailed is your image</p>
+                        <span class="details Continue"><input type="radio" name="details"><span></span>Little<span class="media-hide"> Detailed</span></span>
+                        <span class="details Continue"><input type="radio" name="details"><span></span>Medium<span class="media-hide"> Detailed</span></span>
+                        <span class="details Continue"><input type="radio" name="details"><span></span>Highly<span class="media-hide"> Detailed</span></span>
+                        <a href="https://commerce.coinbase.com/checkout/388c99bc-fa46-4a64-b960-bd795eba640d" target="_blank" class="button">Convert Image</a>
+                        <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="button margins">Back To Home</a>
+
+        <div class="footer">
+            <p>This website doesn't use cookies to collect user's data.</p>
+            <p>Copyright &copy; 2018 | Designed by OllyLoveDesign | <a href="mailto:info@youvector.co.uk">info@youvector.co.uk</a></p>
+            <a href="https://www.pinterest.com/youvector/" target="_blank">
+                <img alt="Pinterest" src="images/pinterest.png">
+            </a>
+            <a href="https://www.instagram.com/youvector.co.uk/" target="_blank">
+                <img alt="Instagram" src="images/instagram.png">
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".Continue").on("click", function() {
+                    $(this).addClass("active")
+                })
+            })
+        </script>
+    </body>
+</html>
